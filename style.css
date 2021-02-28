@@ -1,0 +1,98 @@
+/**
+ * CSS Tip: Select elements in CSS
+ */
+
+/* Select All Elements */
+* {
+  content: "CSS Tip";
+}
+
+/* Select All `div` Elements */
+div {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with class name `example` */
+.example {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with id `example` */
+#example {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with a class name ending in `example` */
+[class$="example"] {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with a class name containing `ex` */
+[class*="ex"] {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with an href attribute containing `example` */
+[href*="example"] {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with a `data-example` attribute, regardless of its value */
+[data-example] {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with a `data-example` attribute that equals `example` */
+[data-example="example"] {
+  content: "CSS Tip";
+}
+
+/* Selects all elements with a `data-example` attribute that contains `ex` */
+[data-example*="ex"] {
+  content: "CSS Tip";
+}
+
+/* Selects all span elements inside of a div */
+div span {
+  content: "CSS Tip";
+}
+
+/* Selects all span elements directly inside of a div (not nested in other elements) */
+div > span {
+  content: "CSS Tip";
+}
+
+/* Selects all span elements that are direct siblings of a div */
+div + span {
+  content: "CSS Tip";
+}
+
+/* Selects all span elements that are siblings of a div */
+div ~ span {
+  content: "CSS Tip";
+}
+
+/* Selects the first span that is a child of a div */
+div span:first-child {
+  content: "CSS Tip";
+}
+
+/* Selects the first span element of its parent */
+span:first-of-type {
+  content: "CSS Tip";
+}
+
+/* Selects all spans that are the second child of their parent */
+span:nth-child(2) {
+  content: "CSS Tip";
+}
+
+/* Selects eveny other span element */
+span:nth-of-type(even) {
+  content: "CSS Tip";
+}
+
+/* Selects all elements that are not a span */
+*:not(span) {
+  content: "CSS Tip";
+}
